@@ -1,0 +1,36 @@
+# Data — never commit raw EPC data (licence restrictions + size)
+data/raw/
+data/raw/**
+*.zip
+
+# Cleaned data: small enough to track, so we DO commit data/processed/
+!data/processed/
+!data/processed/**
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Word lock files
+~$*.docx
+~$*.xlsx
