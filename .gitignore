@@ -3,9 +3,9 @@ data/raw/
 data/raw/**
 *.zip
 
-# Cleaned data: small enough to track, so we DO commit data/processed/
-!data/processed/
-!data/processed/**
+# Cleaned data: commit only the compressed version (CSV is >100MB)
+data/processed/*.csv
+!data/processed/*.csv.gz
 
 # Python
 __pycache__/
